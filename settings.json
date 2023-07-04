@@ -1,7 +1,7 @@
 {
     "git.autofetch": true,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": null,
 
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
@@ -15,7 +15,13 @@
     },
 
     "python.formatting.provider": "black",
-    "black-formatter.args": ["--config", "./pyproject.toml"],
+    "black-formatter.args": ["--config", "./htm_addons/pyproject.toml"],
 
-    "isort.args": ["--profile=black"]
+    "isort.args": ["--profile=black"],
+    "xmlTools.enforcePrettySelfClosingTagOnFormat": false,
+    "prettier.configPath": "./htm_addons/.prettierrc.toml",
+    "editor.formatOnPaste": true,
+    "[xml]": {
+        "editor.defaultFormatter": "mikeburgh.xml-format"
+    }
 }
